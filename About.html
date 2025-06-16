@@ -72,55 +72,37 @@ This is a slow-growing, open-source journey. We welcome thinkers, doers, and dre
   </div>
 <!--Translation script -->
 <script>
-const translations={
-	en:{
-	about_title: "About",
-		into_line1:"Peacetulip is an educational initiative that explores how to create social enterprises rooted in:",
-		values_list:"<br>-justice<br>-cultural understanding<br>-spiritual and philosophical harmony<br>-education as empowerment and
-			<br>-sustainance and environment.",
-	practice_title:"Our goal is not to offer ready-made solutions, but to invite exploration:",
-		practice_text:" What does it mean to build a business that serves the common good and not just in one country, but across 
-			cultures and belief systems? Through Peacetulip.org we provide a framework and inspiration to those who want to 
-	  walk the path. This is a slowly unfolding, open-source journey, one that grows with every contribution. We welcome thinkers, doers, 
-		  and dreamers who wish to contribute. Peacetulip is an educational initiative that explores how to create social enterprises 
-		  rooted in justice, cultural understanding, and spiritual and philosophical harmony. Our goal is not to offer ready-made 
-		  solutions, but to invite exploration: What does it mean to build a business that serves the common good, not just in one 
-		  country, but across cultures and belief systems? Through Peacetulip.org, we provide a framework and inspiration to those 
-		  who want to walk this path. This is a slow-growing, open-source journey. We welcome thinkers, doers, and dreamers who wish 
-		  to contribute.",
-	footer_line1: "peadetulip is seated in The Hague.",
-	footer_line2: "KvK nr. 86219510",
-        footer_line3: "The Hague is the city of Peace and Justice"},
-	nl:{
-		about_title: "Over",
-into_line1:"Peacetulip is een onderwijsinitiatief dat onderzoekt hoe je sociale ondernemingen kunt creëren die geworteld zijn in:",
-values_list:"<br>-recht<br>-cultureel begrip<br>-spirituele en filosofische harmonie<br>-educatie als krachtige ontwikkeling en
-<br>-duurzaamheid en milieu. ",
-practice_title:"Ons doel is niet om kant-en-klare oplossingen te bieden, maar om uit te nodigen tot verkenning:",
-practice_text:" Wat betekent het om een bedrijf op te bouwen dat het algemeen belang dient en niet alleen in één land, maar over 
-culturen en geloofssystemen heen? Via Peacetulip.org bieden we een kader en inspiratie voor diegenen die het pad willen bewandelen 
-. Dit is een zich langzaam ontvouwende, open-source reis die groeit met elke bijdrage. We verwelkomen denkers, doeners, 
-en dromers die een bijdrage willen leveren. Peacetulip is een educatief initiatief dat onderzoekt hoe je sociale ondernemingen 
-kunt creëren die geworteld zijn in rechtvaardigheid, cultureel begrip en spirituele en filosofische harmonie. Ons doel is niet om kant-en-klare 
-oplossingen aan te bieden, maar om uit te nodigen tot verkenning: Wat betekent het om een bedrijf op te bouwen dat het algemeen belang dient, niet alleen in één 
-land, maar over culturen en geloofssystemen heen? Via Peacetulip.org bieden we een kader en inspiratie voor die 
-die dit pad willen bewandelen. Dit is een langzaam groeiende, open-source reis. We verwelkomen denkers, doeners en dromers die 
-willen bijdragen.",
-footer_line1: "peadetulip is gevestigd in Den Haag.",
-footer_line2: "KvK nr. 96219510",
-footer_line3: Den Haag is de stad van vrede en Recht
-	}
-	};
-	function setLanguage(lang) {
+const translations = {
+  en: {
+    about_title: "About",
+    into_line1: "Peacetulip is an educational initiative that explores how to create social enterprises rooted in:",
+    values_list: "<br>-justice<br>-cultural understanding<br>-spiritual and philosophical harmony<br>-education as empowerment and<br>-sustainance and environment.",
+    practice_title: "Our goal is not to offer ready-made solutions, but to invite exploration:",
+    practice_text: "What does it mean to build a business that serves the common good and not just in one country, but across cultures and belief systems? Through Peacetulip.org we provide a framework and inspiration to those who want to walk the path. This is a slowly unfolding, open-source journey, one that grows with every contribution. We welcome thinkers, doers, and dreamers who wish to contribute.",
+    footer_line1: "Peacetulip is seated in The Hague.",
+    footer_line2: "KvK nr. 86219510",
+    footer_line3: "The Hague is the city of Peace and Justice"
+  },
+  nl: {
+    about_title: "Over",
+    into_line1: "Peacetulip is een onderwijsinitiatief dat onderzoekt hoe je sociale ondernemingen kunt creëren die geworteld zijn in:",
+    values_list: "<br>-recht<br>-cultureel begrip<br>-spirituele en filosofische harmonie<br>-educatie als krachtige ontwikkeling en<br>-duurzaamheid en milieu.",
+    practice_title: "Ons doel is niet om kant-en-klare oplossingen te bieden, maar om uit te nodigen tot verkenning:",
+    practice_text: "Wat betekent het om een bedrijf op te bouwen dat het algemeen belang dient en niet alleen in één land, maar over culturen en geloofssystemen heen? Via Peacetulip.org bieden we een kader en inspiratie voor diegenen die het pad willen bewandelen. Dit is een zich langzaam ontvouwende, open-source reis die groeit met elke bijdrage. We verwelkomen denkers, doeners en dromers die een bijdrage willen leveren.",
+    footer_line1: "Peacetulip is gevestigd in Den Haag.",
+    footer_line2: "KvK nr. 86219510",
+    footer_line3: "Den Haag is de stad van vrede en recht"
+  }
+};
+
+function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     el.innerHTML = translations[lang][key] || `[${key}]`;
   });
 }
-
-	});
-	}
 </script>
+
 	  
 </body>
 </html>
