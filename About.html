@@ -72,7 +72,7 @@ This is a slow-growing, open-source journey. We welcome thinkers, doers, and dre
   </div>
 <!--Translation script -->
 <script>
-const translations = {
+const translations={
 	en:{
 	about_title: "About",
 		into_line1:"Peacetulip is an educational initiative that explores how to create social enterprises rooted in:",
@@ -112,7 +112,9 @@ footer_line3: Den Haar is de stad van vrede en Recht
 	}
 	};
 	function setLanguage(lang){
-		document.querySelectorAll([data-i18n]||`[$(key)]`;
+		document.querySelectorAll([data-i18n]").forEach(el=>{
+			cons key = el.getAttribute("data-i18n");
+			el.innerHTML=traanslations[land][key]||`[$(key)]`;
 	});
 	}
 </script>
